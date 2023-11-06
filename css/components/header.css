@@ -1,0 +1,31 @@
+header {
+  padding: 1rem;
+  height: 4.375rem;
+  /* border: 1px solid #d1d1d1; */
+}
+
+.logo {
+  width: 250px;
+}
+
+.content-welcome {
+  display: flex;
+  gap: 9.5rem;
+}
+
+img {
+  object-fit: contain;
+}
+
+.content__welcome {
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .content-welcome {
+    width: auto;
+  }
+  .logo {
+    width: auto;
+  }
+}

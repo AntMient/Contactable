@@ -1,0 +1,71 @@
+.section {
+  display: flex;
+  min-height: 100vh;
+}
+.lateral {
+  min-width: 280px;
+  border-right: 1px solid #d1d1d1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.lateral, a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.lateral__links {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  
+}
+
+.lateral__links:hover {
+  border-radius: 0px 25px 25px 0px;
+  background-color: #999b9e;
+}
+
+.lateral use {
+  fill: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .section {
+    flex-direction: column-reverse;
+  }
+
+  .lateral {
+    position: sticky;
+    bottom: 0rem;
+    background-color: #1d2128;
+    z-index: 1;
+    min-width: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+    border: none;
+    border-top: 1px solid #999b9e;
+  }
+  .lateral a {
+    border-radius: 0;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .lateral__links:hover {
+    background-color: #1d2128;
+  }
+
+  .lateral__links p {
+    display: none;
+  }
+
+  .lateral__links svg {
+    width: 50px;
+    height: 50px;
+  }
+}
