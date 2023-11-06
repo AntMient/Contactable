@@ -17,12 +17,3 @@ const DOMHandler = (function (parentSelector) {
   })("#root");
   
   export default DOMHandler;
-  // Template Module
-  /* const Module = {
-    toString(){
-      return `<h1>Hello World!</h1>`
-    },
-    addListeners() {},
-  }
-  export default Module;
-  */
