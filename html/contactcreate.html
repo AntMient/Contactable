@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Contactable</title>
+</head>
+
+<body class="">
+  <!-- Happy coding -->
+  <header class="flex between center-align section-space border-bottom">
+    <h1 class="text-xxl">Create new contact</h1>
+    <a class="text-xl text-blue pointer" href="">Logout</a>
+  </header>
+  <main class="complete-height">
+    <!-- <div class="padding-2"> -->
+    <form class="form-input" action="">
+      <div class="gap-2 flex-column gap">
+        <input class="text input-text border-bottom" type="text" placeholder="Name" />
+        <input class="text input-text border-bottom" type="text" placeholder="Number" />
+        <input class="text input-text border-bottom" type="text" placeholder="Email" />
+        <select class="text input-text select text-gray" name="relation">
+          <option hidden selected>Relation</option>
+          <option value="familia">Family</option>
+          <option value="amigo">Friends</option>
+          <option value="pareja">Work</option>
+          <option value="pareja">Acquaintance</option>
+        </select>
+
+      </div>
+      <div class="end border-top">
+        <button class="margin-1 text text-blue">Cancel</button>
+        <!-- <a class="margin-1 text text-blue" href="../index.js">Cancel</a> -->
+        <button type="submit" class="margin-1 text text-blue">Save</button>
+        <!-- <a class="margin-1 text text-blue" href="/HTML/contactdetail.html ">Save</a> -->
+      </div>
+
+
+    </form>
+    <!-- </div> -->
+  </main>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
